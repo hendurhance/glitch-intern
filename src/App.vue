@@ -1,14 +1,15 @@
 <template>
   <section>
-    <h1>Hello World</h1>
+    <the-header title="AQUILA AVEION"></the-header>
     <photo-card></photo-card>
+    <the-navigation></the-navigation>
   </section>
 </template>
 
 <script>
 
 export default {
- 
+    
 }
 </script>
 

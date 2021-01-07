@@ -21,8 +21,8 @@ div{
     text-align: center;
 }
 img{
-    margin-top: 35px;
+    margin-top: 2rem;
     width: 30%;
-    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .15),;
+    box-shadow: 0px 0px 20px 20px rgba(3, 3, 3, 0.164);
 }
 </style>

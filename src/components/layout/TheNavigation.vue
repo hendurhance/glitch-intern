@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 ul{
     text-align: center;
 }
@@ -42,6 +42,7 @@ li{
     padding: 1rem;
     margin-top: 1rem !important;
 }
+
 .pic{
     width: 4rem;
     border-radius: 100%;

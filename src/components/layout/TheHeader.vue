@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 header{
-    padding-top: 3rem;
+    padding-top: 2rem;
 
 }
 
@@ -20,5 +20,7 @@ h1{
     color: #efe4e8;
     text-align: center;
     word-spacing: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
 }
 </style>

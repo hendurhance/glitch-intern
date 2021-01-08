@@ -4,6 +4,7 @@ import PhotoCard from "./components/UI/PhotoCard.vue"
 import TheHeader from "./components/layout/TheHeader.vue"
 import TheNavigation from "./components/layout/TheNavigation.vue"
 import BaseButton from "./components/UI/BaseButton.vue"
+import SideNavigation from './components/layout/SideNavigation.vue'
 
 
 
@@ -21,6 +22,9 @@ app.component('the-navigation', TheNavigation)
 
 //Import TheNavigation component globally
 app.component('base-button', BaseButton)
+
+//Import TheNavigation component globally
+app.component('side-nav', SideNavigation)
 
 //Mount App
 app.mount('#app')

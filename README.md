@@ -1,7 +1,7 @@
 # glitch-intern
 
 # Preview Link
-[a link](https://glitch-intern-vue.netlify.app/)
+[Preview deployed page](https://glitch-intern-vue.netlify.app/)
 
 ## Project setup
 ```

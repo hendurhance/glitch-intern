@@ -13,7 +13,9 @@ export default {
     data(){
       return{
         name: null,
-        results: [],
+        
+        //Obj push to empty array
+        // results: [],
       }
     },
     created(){
@@ -25,7 +27,7 @@ export default {
             const nameData = data.name
             this.name = nameData
             const linkData = data.social_media
-            console.log(linkData)
+            // console.log(linkData)
             const email = linkData.email
             const instagram = linkData.instagram
             const snapchat = linkData.snapchat
@@ -33,11 +35,6 @@ export default {
             const obj = [email, snapchat, twitter, instagram]
             this.results = obj
            })
-    },
-    provide (){
-      return{
-        resultObj: this.results
-      }
     }
 }
 </script>

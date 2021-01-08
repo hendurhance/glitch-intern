@@ -1,22 +1,22 @@
 <template>
   <ul>
       <li>
-          <base-button :href="Insta">
+          <base-button :href="'https://instagram.com/' + Insta">
             <img :src="Instagram" alt="">
           </base-button>
       </li>
       <li>
-          <base-button :href="Twi">
+          <base-button :href="'https://instagram.com/' + Twi">
             <img :src="Twitter" alt="">
           </base-button>
       </li>
       <li>
-          <base-button :href="Snap">
+          <base-button :href="'https://instagram.com/' + Snap">
             <img :src="Snapchat" alt="">
           </base-button>
       </li>
       <li>
-          <base-button :href="eMail">
+          <base-button :href="'mailto:' + eMail">
             <img :src="Mail" alt="">
           </base-button>
       </li>
@@ -30,7 +30,6 @@ import Snapchat from '../../assets/snapchat.svg'
 import Mail from '../../assets/mail.svg'
 
 export default {
-    inject: ['resultObj'],
     data(){
         return{
             Instagram: Instagram,
@@ -43,15 +42,20 @@ export default {
             eMail: null
         }
     },
-    created() {
-    // console.log(`Injected property: ${this.resultObj}`)
-    for(const id in `${this.resultObj}`){
-        this.Insta = id.instagram
-        this.Twi = id.twitter
-        this.Snap = id.snapchat
-        this.eMail = id.email
+    created(){
+      fetch('https://hirng-x2021.glitch.me/api').then((response) =>  {
+              if (response.ok) {
+                  return response.json();
+              }
+          }).then((data) => {
+            const socialLink = data.social_media
+            // console.log(socialLink)
+            this.eMail = socialLink.email
+            this.Insta = socialLink.instagram
+            this.Snap = socialLink.snapchat
+            this.Twi = socialLink.twitter
+           })
     }
-  }
 }
 </script>
 

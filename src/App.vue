@@ -51,9 +51,9 @@ section{
     width: 100%;
     height: 100vh;
     background: linear-gradient(to right, #bd0f4d 0%,#bd0f4d 50%,#bd0f4d 50%,#cb2964 50%,#cb2964 100%);
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 </style>
